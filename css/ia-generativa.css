@@ -1,0 +1,80 @@
+@font-face {
+    font-family: Cherry Bomb One;
+    src: url('../fonts/CherryBombOne-Regular.ttf');
+}
+
+@font-face {
+    font-family: Inter;
+    src: url('../fonts/Inter-VariableFont_slnt\,wght.ttf');
+}
+
+p, li{
+    line-height: 250%;
+}
+
+.tit {
+    font-family: Cherry Bomb One;
+}
+
+.principal {
+    font-size: 35px;
+    color: #27C030;
+}
+
+.secundario {
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+
+.bubble {
+    margin: 50px 0;
+    padding: 10px 30px;
+    width: 260px;
+}
+
+.bub {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+.ex {
+    padding: 22px 50px;
+    width: 600px;
+}
+
+.sml {
+    padding: 30px;
+    margin: 25px 0;
+    width: 600px;
+}
+
+.mid {
+    width: 1000px;
+}
+
+#frutas {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    width: 80vw;
+}
+
+.img-planetinha {
+    position: absolute;
+    z-index: -1;
+    width: 212px;
+    right: 50px;
+    top: 406px;
+    mix-blend-mode:darken;
+}
+
+.img-agricultores {
+    position: absolute;
+    z-index: -1;
+    width: 536px;
+    right: 50px;
+    top: 765px;
+    mix-blend-mode:darken;
+}
