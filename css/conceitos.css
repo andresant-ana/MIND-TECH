@@ -67,6 +67,7 @@ p, li{
     width: 212px;
     right: 50px;
     top: 406px;
+    mix-blend-mode:darken;
 }
 
 .img-agricultores {
@@ -75,4 +76,5 @@ p, li{
     width: 536px;
     right: 50px;
     top: 765px;
+    mix-blend-mode:darken;
 }
