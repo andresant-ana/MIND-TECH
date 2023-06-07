@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Inter-Black;
+    src: url('../fonts/Inter-Black.ttf');
+}
+
 .cabecalho {
     position: fixed;
     width: 100%;
@@ -36,6 +41,7 @@
     margin-right: 25px;
     text-decoration: none;
     color: #25232F;
-    font-weight: bold;  
     font-size: 14px;
+    font-family: Inter-Black;
+    font-style: italic;
 }
