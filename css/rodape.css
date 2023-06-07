@@ -6,20 +6,23 @@
     align-items: center;
     text-align: center;
     justify-content: center;
+  
     padding: 10px;
+
     background: rgba(255, 255, 255, 0.5);
     box-shadow: 0px -5px 4px rgba(0, 0, 0, 0.05);
+
     font-size: 12px;
 }
-
+  
 .Integrante {
     padding: 13px;
 }
-
+  
 .Integrante:first-child {
     text-align: left;
 }
-
+  
 .Integrante:last-child {
     text-align: right;
 }
