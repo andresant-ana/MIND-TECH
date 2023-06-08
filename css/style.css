@@ -1,7 +1,8 @@
-@import url('./cabecalho.css');
-@import url('./conteudo.css');
-@import url('./conteudo-index.css');
-@import url('./conceitos.css');
+@import url('../css/cabecalho.css');
+@import url('../css/rodape.css');
+@import url('../css/conteudo.css');
+@import url('../css/conteudo-index.css');
+@import url('../css/conceitos.css');
 @import url('./rodape.css');
 
 * {
@@ -12,5 +13,16 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     overflow-x: hidden;
+    color: #25232F;
 }
 
+input[type='submit'] {
+    border-radius: 10px;
+    background-color: #25232F;
+    color: #fff;
+    padding: 10px 50px;
+    font-weight: 900;
+    border: 2px solid #fff;
+    box-shadow:  0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}

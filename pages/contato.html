@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Fale Conosco</title>
+
+    <script src="../js/formulario.js" defer></script>
+
+</head>
+<body>
+    <header class="cabecalho">
+        <a href="./index.html" title="Home">
+            <img src="../img/mindtech-bh-logo.png" alt="Home" class="logo">
+        </a>
+        <nav class="menu">
+            <ul>
+                <li><a href="../pages/agricultura.html" title="Agricultura Sustentável">AGRICULTURA SUSTENTÁVEL</a></li>
+                <li><a href="../pages/ia-generativa.html" title="IA Generativa">IA GENERATIVA</a></li>
+                <li><a href="../pages/modelos-cultivo.html" title="Modelos de Cultivo">MODELOS DE CULTIVO</a></li>
+                <li><a href="../pages/cursos.html" title="Cursos">CURSOS</a></li>
+                <li><a href="../pages/contato.html" title="Contato">CONTATO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="conteudo">
+        <h1 class="tit principal">ENTRE EM CONTATO CONOSCO!</h1>
+        <h2 class="tit secundario">QUEREMOS OUVIR VOCÊ!</h2>
+        <div>
+            <h3>Bem-vindos à nossa página de contato!</h3>
+            <p>
+                Aqui, você pode nos enviar suas dúvidas, sugestões e mensagens.
+            </p>
+            <p>
+                Queremos estar mais próximos de você, ouvindo suas ideias e respondendo às suas perguntas. 
+            </p>
+            <p>
+                Preencha o formulário abaixo e aguarde nosso retorno.
+            </p>
+        </div>
+        <section>
+            <h2 class="tit bub bubble">FORMULÁRIO DE CONTATO</h2>
+            <section class="bub sml">
+                <form action="" id="formulario" onsubmit="return validarFormulario()">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required minlength="2" pattern="[A-Za-zÀ-ÿ\s]+" /><br>
+        
+                    <label for="sobrenome">Sobrenome:</label>
+                    <input type="text" id="sobrenome" name="sobrenome" required minlength="2" pattern="[A-Za-zÀ-ÿ\s]+" /><br>
+        
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" /><br>
+        
+                    <label for="telefone">Telefone (com DDD):</label>
+                    <input type="tel" id="telefone" name="telefone" required pattern="^\d{10,11}$" /><br>
+        
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" id="cidade" name="cidade" required minlength="2" pattern="[A-Za-zÀ-ÿ\s]+" /><br>
+        
+                    <label for="estado">Estado:</label>
+                    <input type="text" id="estado" name="estado" required minlength="2" maxlength="2" pattern="[A-Za-z]+" oninput="this.value = this.value.toUpperCase()" /><br>
+        
+                    <label for="pais">País:</label>
+                    <input type="text" id="pais" name="pais" required minlength="2" pattern="[A-Za-zÀ-ÿ\s]+" /><br>
+        
+                    <label for="topico">Tópico da mensagem:</label>
+                    <select id="topico" name="topico" required>
+                        <option value="">Selecione</option>
+                        <option value="Agricultura Sustentável">Agricultura Sustentável</option>
+                        <option value="IA Generativa">IA Generativa</option>
+                        <option value="Modelos de Cultivo">Modelos de Cultivo</option>
+                        <option value="Outro">Outro</option>
+                    </select><br>
+        
+                    <label for="aceite">Aceite dos termos de uso:</label>
+                    <input type="checkbox" id="aceite" name="aceite" required /><br>
+        
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" required minlength="4" maxlength="900"></textarea><br>
+        
+                    <input type="submit" value="Enviar" />
+                </form>
+            </section>
+        </section>
+    </section>
+
+    <footer class="rodape">
+        <div class="Integrante">
+            <p>André SantAna Boim </p>
+            <p> rm551575</p>
+        </div>
+        <div class="line"></div>
+        <div class="Integrante">
+            <p>Ester Dutra da Silva </p>
+            <p> rm97798</p>
+        </div>
+        <div class="line"></div>
+        <div class="Integrante">
+            <p>Gabriel Eringer de Oliveira </p>
+            <p> rm99632</p>
+        </div>
+        <div class="line"></div>
+        <div class="Integrante">
+            <p>Henrique Gerson Costa Correia </p>
+            <p> rm550981</p>
+        </div>
+        <div class="line"></div>
+        <div class="Integrante">
+            <p>Maria Eduarda Ferreira da Mata </p>
+            <p> rm99004</p>
+        </div>
+    </footer>
+
+</body>
+</html>

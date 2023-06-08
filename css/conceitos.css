@@ -8,6 +8,107 @@
     src: url('../fonts/Inter-VariableFont_slnt\,wght.ttf');
 }
 
+.desc {
+    background: #25232F;
+    border-radius: 10px;
+    width: 320px;
+    height: 34px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 6px 9px;
+    align-items: center;
+}
+
+.dificuldade {
+    font-weight: 900;
+}
+
+.facil {
+    color: #35CC7B;
+}
+
+.moderado {
+    color: #CCB335;
+}
+
+.dificil {
+    color: #CC3535;
+}
+
+.atividades {
+    display: flex;
+    justify-content: center;
+}
+
+.ativ {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.wip {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.img-atividade {
+    width: 320px;
+    height: 200px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+p, li{
+    line-height: 250%;
+}
+
+.tit {
+    font-family: Cherry Bomb One;
+}
+
+.principal {
+    font-size: 35px;
+    color: #27C030;
+}
+
+.secundario {
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+
+.bubble {
+    margin: 50px 0;
+    padding: 10px 30px;
+    width: 260px;
+}
+
+.bub {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+.ex {
+    padding: 22px 50px;
+    width: 600px;
+}
+
+.sml {
+    padding: 30px;
+    margin: 25px 0;
+    width: 600px;
+}
+
+.mid {
+    width: 1000px;
+}
+
 #frutas {
     position: absolute;
     z-index: -1;
@@ -22,6 +123,7 @@
     width: 212px;
     right: 50px;
     top: 406px;
+    mix-blend-mode:darken;
 }
 
 .img-agricultores {
@@ -30,57 +132,5 @@
     width: 536px;
     right: 50px;
     top: 765px;
+    mix-blend-mode:darken;
 }
-
-.conteudo >p {
-    width: 686px;
-    font-size: 18px;
-    line-height: 36px;
-    text-align: justify;
-    padding-bottom: 20px;
-}
-
-.tit-principal, .tit-secundario {
-    font-family: Cherry Bomb One;
-}
-
-.tit-principal {
-    font-size: 35px;
-    color: #27C030;
-}
-
-.tit-secundario {
-    font-size: 30px;
-    color: #25232F;
-}
-
-.tit {
-    background: #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
-  
-    width: -moz-fit-content;
-    width: fit-content;
-    margin: 50px 0;
-    padding: 22px 50px;
-}
-
-.conceitos >.tit{
-    padding: 6px 71px;
-}
-
-.conceitos p {
-    width: calc(686px - 150px);
-}
-
-.melhorias >.tit {
-    margin-left: 180px;
-}
-
-.tit >h2{
-    font-size: 30px;
-    font-weight: 700;
-    font-family: Cherry Bomb One;
-    color: #25232F;
-}
-
