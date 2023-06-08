@@ -27,48 +27,64 @@
     </header>
 
     <section class="conteudo">
-        <h1>Fale Conosco</h1>
+        <h1 class="tit principal">ENTRE EM CONTATO CONOSCO!</h1>
+        <h2 class="tit secundario">QUEREMOS OUVIR VOCÊ!</h2>
+        <div>
+            <h3>Bem-vindos à nossa página de contato!</h3>
+            <p>
+                Aqui, você pode nos enviar suas dúvidas, sugestões e mensagens.
+            </p>
+            <p>
+                Queremos estar mais próximos de você, ouvindo suas ideias e respondendo às suas perguntas. 
+            </p>
+            <p>
+                Preencha o formulário abaixo e aguarde nosso retorno.
+            </p>
+        </div>
+        <section>
+            <h2 class="tit bub bubble">FORMULÁRIO DE CONTATO</h2>
+            <section class="bub sml">
+                <form action="" id="formulario" onsubmit="return validarFormulario()">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required minlength="2" pattern="[A-Za-zÀ-ÿ\s]+" /><br>
         
-        <form action="" id="formulario" onsubmit="return validarFormulario()">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required minlength="2" pattern="[A-Za-zÀ-ÿ\s]+" /><br>
-
-            <label for="sobrenome">Sobrenome:</label>
-            <input type="text" id="sobrenome" name="sobrenome" required minlength="2" pattern="[A-Za-zÀ-ÿ\s]+" /><br>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" /><br>
-
-            <label for="telefone">Telefone (com DDD):</label>
-            <input type="tel" id="telefone" name="telefone" required pattern="^\d{10,11}$" /><br>
-
-            <label for="cidade">Cidade:</label>
-            <input type="text" id="cidade" name="cidade" required minlength="2" pattern="[A-Za-zÀ-ÿ\s]+" /><br>
-
-            <label for="estado">Estado:</label>
-            <input type="text" id="estado" name="estado" required minlength="2" maxlength="2" pattern="[A-Za-z]+" oninput="this.value = this.value.toUpperCase()" /><br>
-
-            <label for="pais">País:</label>
-            <input type="text" id="pais" name="pais" required minlength="2" pattern="[A-Za-zÀ-ÿ\s]+" /><br>
-
-            <label for="topico">Tópico da mensagem:</label>
-            <select id="topico" name="topico" required>
-                <option value="">Selecione</option>
-                <option value="Agricultura Sustentável">Agricultura Sustentável</option>
-                <option value="IA Generativa">IA Generativa</option>
-                <option value="Modelos de Cultivo">Modelos de Cultivo</option>
-                <option value="Outro">Outro</option>
-            </select><br>
-
-            <label for="aceite">Aceite dos termos de uso:</label>
-            <input type="checkbox" id="aceite" name="aceite" required /><br>
-
-            <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" name="mensagem" required minlength="4" maxlength="900"></textarea><br>
-
-            <input type="submit" value="Enviar" />
-        </form>
+                    <label for="sobrenome">Sobrenome:</label>
+                    <input type="text" id="sobrenome" name="sobrenome" required minlength="2" pattern="[A-Za-zÀ-ÿ\s]+" /><br>
         
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" /><br>
+        
+                    <label for="telefone">Telefone (com DDD):</label>
+                    <input type="tel" id="telefone" name="telefone" required pattern="^\d{10,11}$" /><br>
+        
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" id="cidade" name="cidade" required minlength="2" pattern="[A-Za-zÀ-ÿ\s]+" /><br>
+        
+                    <label for="estado">Estado:</label>
+                    <input type="text" id="estado" name="estado" required minlength="2" maxlength="2" pattern="[A-Za-z]+" oninput="this.value = this.value.toUpperCase()" /><br>
+        
+                    <label for="pais">País:</label>
+                    <input type="text" id="pais" name="pais" required minlength="2" pattern="[A-Za-zÀ-ÿ\s]+" /><br>
+        
+                    <label for="topico">Tópico da mensagem:</label>
+                    <select id="topico" name="topico" required>
+                        <option value="">Selecione</option>
+                        <option value="Agricultura Sustentável">Agricultura Sustentável</option>
+                        <option value="IA Generativa">IA Generativa</option>
+                        <option value="Modelos de Cultivo">Modelos de Cultivo</option>
+                        <option value="Outro">Outro</option>
+                    </select><br>
+        
+                    <label for="aceite">Aceite dos termos de uso:</label>
+                    <input type="checkbox" id="aceite" name="aceite" required /><br>
+        
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" required minlength="4" maxlength="900"></textarea><br>
+        
+                    <input type="submit" value="Enviar" />
+                </form>
+            </section>
+        </section>
     </section>
 
     <footer class="rodape">
