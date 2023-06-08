@@ -1,7 +1,8 @@
-@import url('./cabecalho.css');
-@import url('./conteudo.css');
-@import url('./conteudo-index.css');
-@import url('./conceitos.css');
+@import url('../css/cabecalho.css');
+@import url('../css/rodape.css');
+@import url('../css/conteudo.css');
+@import url('../css/conteudo-index.css');
+@import url('../css/conceitos.css');
 @import url('./rodape.css');
 
 * {
@@ -13,4 +14,87 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     overflow-x: hidden;
     color: #25232F;
+}
+
+input[type='submit'] {
+    border-radius: 10px;
+    background-color: #25232F;
+    color: #fff;
+    padding: 10px 50px;
+    font-weight: 900;
+    border: 2px solid #fff;
+    box-shadow:  0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+    .cabecalho {
+        flex-direction: column;
+        height: 100px;
+        height: 18%;
+    }
+
+    .logo {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu a {
+        margin-right: 32vw;
+        margin-bottom: 10px;
+    }
+
+    .card {
+        margin-top: 150px;
+    }
+
+    .rodape {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .Integrante {
+        padding: 5px;
+    }
+
+    .Integrante:first-child, .Integrante:last-child {
+        text-align: center;
+    }
+
+    .line {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .cabecalho {
+        flex-direction: column;
+        height: 100px;
+    }
+
+    .logo {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .menu ul {
+        margin-right: 50px;
+    }
+
+    .card {
+        margin-top: 150px;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    .cabecalho {
+        width: 80%;
+        margin: 0 auto;
+    }
 }
